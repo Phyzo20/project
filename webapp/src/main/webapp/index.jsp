@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Commercial Web App</title>
+    <title>Phyzo App</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Commercial Web App</h1>
+        <h1>Welcome to the Phyzo Greeting App</h1>
     </header>
     <main>
         <section id="products">
