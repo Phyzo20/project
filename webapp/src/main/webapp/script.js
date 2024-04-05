@@ -1,37 +1,23 @@
-let cartItems = [];
-let totalPrice = 0;
+document.addEventListener("DOMContentLoaded", function() {
+    const productList = document.getElementById("product-list");
 
-function addToCart(productId) {
-    // Add logic to fetch product details from the server/database
-    // For simplicity, we'll assume a static product with a price
+    // Sample product data
+    const products = [
+        { name: "Product 1", description: "Description of product 1.", price: "$10.00" },
+        { name: "Product 2", description: "Description of product 2.", price: "$20.00" },
+        { name: "Product 3", description: "Description of product 3.", price: "$30.00" }
+    ];
 
-    const product = {
-        id: productId,
-        name: `Product ${productId}`,
-        price: 19.99 // Replace with actual price
-    };
-
-    cartItems.push(product);
-    totalPrice += product.price;
-
-    updateCartUI();
-}
-
-function updateCartUI() {
-    const cartItemsElement = document.getElementById("cartItems");
-    const totalElement = document.getElementById("totalPrice");
-
-    // Clear previous items
-    cartItemsElement.innerHTML = "";
-
-    // Populate cart items
-    cartItems.forEach(item => {
-        const listItem = document.createElement("li");
-        listItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
-        cartItemsElement.appendChild(listItem);
+    // Render products
+    products.forEach(product => {
+        const productDiv = document.createElement("div");
+        productDiv.classList.add("product");
+        productDiv.innerHTML = `
+            <h3>${product.name}</h3>
+            <p>${product.description}</p>
+            <p>Price: ${product.price}</p>
+        `;
+        productList.appendChild(productDiv);
     });
-
-    // Update total price
-    totalElement.textContent = totalPrice.toFixed(2);
-}
+});
 

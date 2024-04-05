@@ -2,39 +2,30 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
-header, footer {
+header {
     background-color: #333;
-    color: #fff;
-    padding: 1em;
+    color: white;
+    padding: 10px 20px;
     text-align: center;
 }
-
 main {
-    padding: 1em;
+    padding: 20px;
 }
-
-section {
-    margin-bottom: 2em;
-}
-
-.product {
-    border: 1px solid #ddd;
-    padding: 1em;
-    margin-bottom: 1em;
-}
-
-button {
-    background-color: #4CAF50;
+footer {
+    background-color: #333;
     color: white;
-    padding: 0.5em 1em;
-    border: none;
-    cursor: pointer;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
-
-button:hover {
-    background-color: #45a049;
+.product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
-
 
