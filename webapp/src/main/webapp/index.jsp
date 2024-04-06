@@ -11,7 +11,7 @@
 <body>
     <header>
         <h1>Welcome to Manizu Resources Web App</h1>
-	<h2>if you see this,you are in the right place </h2>
+	<h2>if you see this,you are in the right place.Goodluck </h2>
     </header>
     <main>
         <h2>Products</h2>
