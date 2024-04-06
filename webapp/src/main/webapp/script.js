@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Sample product data
     const products = [
-        { name: "Product 1", description: "Description of product 1.", price: "$10.00" },
-        { name: "Product 2", description: "Description of product 2.", price: "$20.00" },
-        { name: "Product 3", description: "Description of product 3.", price: "$30.00" }
+        { name: "Product 1", description: "Description of product 1.", price: "$15.00" },
+        { name: "Product 2", description: "Description of product 2.", price: "$22.00" },
+        { name: "Product 3", description: "Description of product 3.", price: "$31.00" }
     ];
 
     // Render products
